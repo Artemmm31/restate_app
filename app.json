@@ -5,17 +5,19 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "restateapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "scheme": ["restateapp", "appwrite-callback-68d55c4c003265cb5303"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.restate"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.restate"
     },
     "web": {
       "bundler": "metro",
@@ -45,7 +47,8 @@
             "./assets/fonts/Rubik-SemiBold.ttf"
           ]
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true

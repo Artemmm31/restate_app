@@ -8,9 +8,9 @@ import { Alert, Image, ScrollView, Text, TouchableOpacity, View } from 'react-na
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const SignIn = () => {
-  const { refetch, loadind, isLoggedIn } = useGlobalContext();
+  const { refetch, loading, isLoggedIn } = useGlobalContext();
 
-  if(!loadind && isLoggedIn) return <Redirect href='/' />
+  if(!loading && isLoggedIn) return <Redirect href='/' />
 
   const handleLogin = async () => {
     const res = await login();

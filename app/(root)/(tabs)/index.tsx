@@ -1,4 +1,4 @@
-/* import { Card, FeaturedCard } from "@/components/Cards";
+import { Card, FeaturedCard } from "@/components/Cards";
 import Filters from "@/components/Filters";
 import NoResults from "@/components/NoResults";
 import Search from "@/components/Search";
@@ -111,18 +111,6 @@ export default function Index() {
           </View>
         }
       />
-    </SafeAreaView>
-  );
-} */
-import { Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-
-export default function Index() {
-  return (
-    <SafeAreaView className="bg-white h-full">
-      <View>
-        <Text>Test Page</Text>
-      </View>
     </SafeAreaView>
   );
 }

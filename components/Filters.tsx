@@ -23,6 +23,7 @@ const Filters = () => {
     <ScrollView horizontal showsHorizontalScrollIndicator={false} className='mt-3 mb-2'>
         {categories.map((item, index) => (
             <TouchableOpacity 
+                key={index}
                 className={`flex flex-col items-start mr-4 px-4 py-2 rounded-full 
                     ${selectedCategory === item.category 
                         ? 'bg-primary-300' 
